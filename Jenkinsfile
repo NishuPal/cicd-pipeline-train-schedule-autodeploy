@@ -9,7 +9,7 @@ pipeline {
             steps {
                 echo 'Running build automation'
                
-                archiveArtifacts artifacts: 'dist/trainSchedule.zip'
+                echo 'archiveArtifacts artifacts: 'dist/trainSchedule.zip''
             }
         }
         stage('Build Docker Image') {
